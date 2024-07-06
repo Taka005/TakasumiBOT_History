@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>TakasumiBOT History</title>
+
+        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="1024x1024" href="/assets/img/takasumibot.png">
+
+        <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/ fb# prefix属性: https://ogp.me/ns/ prefix属性#">
+        <meta property="og:url" content="https://history.takasumibot.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="取引履歴" />
+        <meta property="og:description" content="TakasumiBOTの取引履歴確認システム" />
+        <meta property="og:site_name" content="TakasumiBOT History" />
+        <meta property="og:image" content="https://history.takasumibot.com/assets/img/takasumibot.png" />
+
+        <meta name="description" content="TakasumiBOTのサーバー掲示板">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-darl mb-0 h1" href="/">TakasumiBOT History</a>
+                    <span class="navbar-text count"></span>
+                </div>
+            </nav>
+        </header>
+	    <main>
+            <div class="container">
+                <form id="userForm">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="ユーザーIDを入力" id="userInput">
+                        <button type="submit" class="btn btn-lg btn-secondary" id="userButton">検索</button>
+                    </div>
+                    <div class="form-text result"></div>
+                </form>
+                <div class="hisotryList">
+                    
+                </div>
+            </div>
+	    </main>
+        <script src="/assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    </body>
+</html>
