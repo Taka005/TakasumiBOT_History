@@ -35,6 +35,8 @@ async function getHistory(id){
       console.log(error);
     });
 
+  if(!data.data) return [];
+
   data.data.reverse();
 
   return data.data;
@@ -45,9 +47,9 @@ function historyList(data){
     data.map(history=>{
       return `<tr>
         <th scope="row">${history.id}</th>
-        <td>${history.amount}</td>
+        <td>${history.amount}コイン</td>
         <td>${history.reason}</td>
-        <td>@${history.time}</td>
+        <td>${history.time}</td>
       </tr>`;
     }).join("")
   );
