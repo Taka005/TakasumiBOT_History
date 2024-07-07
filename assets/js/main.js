@@ -48,7 +48,7 @@ function historyList(data){
         <th scope="row">-</th>
         <td>-</td>
         <td>-</td>
-        <td>合計${data.reduce((pre,his)=>pre+his.amount,0)}コイン</td>
+        <td>合計${data.reduce((pre,his)=>pre+Number(his.amount),0)}コイン</td>
     </tr>`
       +
     data.map(history=>{
