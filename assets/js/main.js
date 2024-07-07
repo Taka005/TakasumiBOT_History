@@ -45,10 +45,10 @@ async function getHistory(id){
 function historyList(data){
   document.querySelector(".historyList").insertAdjacentHTML("afterbegin",
     `<tr>
-        <th scope="row">-</th>
+        <th>-</th>
         <td>-</td>
         <td>-</td>
-        <td>合計${data.reduce((pre,his)=>pre+Number(his.amount),0)}コイン</td>
+        <td scope="row">合計:${data.reduce((pre,his)=>pre+Number(his.amount),0)}コイン</td>
     </tr>`
       +
     data.map(history=>{
